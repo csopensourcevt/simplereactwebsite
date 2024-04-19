@@ -1,0 +1,34 @@
+@import '../../Components/Breakpoints'
+@import '../../Components/Constants'
+
+.examplepage2_toplevel
+    //width: 100vw
+    height: 100vh
+    background-image: linear-gradient(teal, orange)
+
+.examplepage2
+    //border: 2px solid green
+    @media screen and (min-width: $ss8min)
+        padding: $p6 calc(50vw - ($ss7 - 2*$p6)/2)
+    @media screen and (min-width: $ss7min) and (max-width: $ss7)
+        padding: $p5 calc(50vw - ($ss6 - 2*$p5)/2)
+    @media screen and (min-width: $ss5min) and (max-width: $ss6)
+        padding: $p4 calc(50vw - ($ss4 - 2*$p4)/2)
+    @media screen and (max-width: $ss4)
+        padding: $p4
+    @media screen and (max-width: $ss3)
+        padding: $p4 $p3
+    @media screen and (max-width: $ss2)
+        padding: $p4 $p2
+    @media screen and (max-width: $ss1)
+        padding: $p4 $p1
+    display: grid
+    @media screen and (min-width: $ss4min)
+        grid-template-columns: repeat(2, 1fr)
+
+
+@media screen and (min-width: $ss5min) and (max-width: $ss6)
+@media screen and (max-width: $ss4)
+@media screen and (max-width: $ss3)
+    .examplepage2
+        text-align: center
