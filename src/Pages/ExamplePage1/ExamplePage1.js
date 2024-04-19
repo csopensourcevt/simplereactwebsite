@@ -1,4 +1,5 @@
 import "./ExamplePage1.sass";
+import DrinkingCoffeeMale from "../../Components/Images/drinking_coffee_male.svg";
 
 function ExamplePage1() {
   return (
@@ -11,6 +12,7 @@ function ExamplePage1() {
           Make something new that everyone can see.
         </div>
       </div>
+      <img src={DrinkingCoffeeMale} className="examplepage1_image" />
     </div>
   );
 }
